@@ -90,7 +90,7 @@ int main(){
     
     
 
-    //FUNï¿½ï¿½O CALCULADORA
+    //FUNCAO CALCULADORA
 void calculadora(){
     
     int ope, n1, n2, re;
@@ -386,24 +386,19 @@ void pa_for(){
 
 void maiorEMenor(){
      int valores[5], contador, maior, menor;
-     maior =0;
-     menor = 0;
      
      for(contador = 0; contador < 5; contador++){
-                    printf("Digite um valor: ");
-                    scanf("%i", &valores[contador]);
-                    if(contador = 0){
-                        maior = valores[contador];
-                        menor = valores[contador];
-                        fflush(stdin);
+               printf("Digite um valor: ");
+               scanf("%i", &valores[contador]);
+                    if(contador == 0){
+                        maior = valores[0];
+                        menor = valores[0];
                     }
                     if(maior < valores[contador]){
                              maior = valores[contador];
-                             fflush(stdin);
                     }
                     if(menor > valores[contador]){
                              menor = valores[contador];
-                             fflush(stdin);
                     }
      }
      printf("\nValores digitados\n");
@@ -513,19 +508,19 @@ void raizQuadrada(){
 }
 
 void ponteiro() {
-  //valor é a variável que
-  //será apontada pelo ponteiro
+  //valor ï¿½ a variï¿½vel que
+  //serï¿½ apontada pelo ponteiro
   int valor = 27;
   
-  //declaração de variável ponteiro
+  //declaraï¿½ï¿½o de variï¿½vel ponteiro
   int *ptr;
   
-  //atribuindo o endereço da variável valor ao ponteiro
+  //atribuindo o endereï¿½o da variï¿½vel valor ao ponteiro
   ptr = &valor;
   
   printf("Utilizando ponteiros\n\n");
   printf ("Conteudo da variavel valor: %d\n", valor);
-  printf ("Endereço da variavel valor: %x \n", &valor);
+  printf ("Endereï¿½o da variavel valor: %x \n", &valor);
   printf ("Conteudo da variavel ponteiro ptr: %x", ptr);
   
   fflush(stdin);
